@@ -1,0 +1,38 @@
+.grid-item {
+    border: 1.5px solid var(--text);
+    border-radius: 0.5rem;
+    padding: 5px;
+    text-align: center;
+    font-size: larger;
+    align-content: center;     /* Vertical center */
+    justify-content: center; /* Horizontal center */
+
+    /* We animate 'transform' instead of 'background' now */
+    transition: transform 0.2s cubic-bezier(0.51, 0.61, 0, 0.96);
+    position: relative;
+    
+    /* Force long words (like CamelSeparator) to break if they don't fit */
+    overflow-wrap: break-word; 
+    word-break: break-word; /* Helper for some browsers to ensure the break happens cleanly */
+    
+    cursor: pointer;
+    height: 4rem;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); 
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+textarea {
+    width: 100%;
+    resize: block;      /* Removes the drag handle in the corner */
+    min-height: 1.3lh;
+    max-height: 50%;
+    height: 4.3lh;
+    box-sizing: border-box;
+    font-family: inherit;
+}

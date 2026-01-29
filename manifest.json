@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "String Util",
+  "version": "0.1.0",
+  "description": "A tool to help with text adjustments. Toggle capitalization, de-whitespace, and cabob with ease!",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Modify Text Settings"
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="popup.css">
+    <style>
+        /* Define variables here */
+        :root {
+            --sutl-color: #dc3f22;
+            --text: #d0e0e0;
+        }
+        body {
+            /* Layout & Dimensions */
+            width: 400px;
+            height: 500px;
+            
+            /* Visuals */
+            background-color: var(--sutl-color);
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--text);
+        }
+        #modeGrid { /* ID SELECTOR: Targets <div id="modeGrid"> */
+            display: grid; 
+            /* Columns will be at least 100px, filling available space */
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            overflow-y: auto; /* Scroll bar if too many items */
+            flex-grow: 1; 
+            padding: 5px;
+            border: 1px solid var(--text);
+            align-content: start; /* packs the rows instead of spreading them*/
+            border-radius: 0.75rem;
+        }
+    </style>
+    <script src="popup.js" defer></script>
+</head>
+    <body>
+        <div style="display: flex; flex-direction: column; gap: 5px; height: 100%; width: 100%;">
+            <div id="modeGrid"></div>
+            <textarea id="textio" placeholder="Enter target text here"></textarea>
+            <button style="display: none;">Apply</button>
+        </div>
+    </body>
+</html>

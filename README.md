@@ -19,3 +19,11 @@ supports...
 
 
 support me [please](ko-fi.com/stevenhoberg)!
+
+soon to come...
+
+* smarter toggling of modes
+* de-latex ify
+* flatten line endings
+* auto copy
+* persistant display for mass operations

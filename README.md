@@ -27,3 +27,4 @@ soon to come...
 * flatten line endings
 * auto copy
 * persistant display for mass operations
+* f/b slash toggler
